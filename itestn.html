@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/itestn.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<body>
+    <header>
+        <a class="btn-open-menu" style="position: fixed;">
+            <span class="hamburguer"></span>
+        </a>
+
+        <div class="header-content">
+            <a class="btn-close-menu"></a>
+
+            <nav>
+                <a href="" class="link-menu">HOME</a>
+                <a href="" class="link-menu">ABOUT</a>
+                <a href="" class="link-menu">BLOGS</a>
+                <a href="" class="link-menu">CONTACT</a>
+            </nav>
+
+            <div class="social">
+                <a href="https://github.com/jvaleska" target="_blank">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/jvaleskasilva/" target="_blank">
+                    <i class="fab fa-linkedin-in fa-2x"></i>
+                </a>
+
+                <a href="https://codepen.io/jvaleskasilva/" target="_blank">
+                    <i class="fab fa-hackerrank fa-2x"></i>
+                </a>
+
+                <a href="https://twitter.com/jvaleskasilva" target="_blank">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+
+                <a href="https://www.instagram.com/jvaleskasilva/" target="_blank">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <img src="css/antivirus.svg" alt="" srcset="" style="width: 10%;">
+        <h1>Cyber-enthusiast.com</h1>
+        <h1>Welcome! Thanks for visiting</h1>
+    </section>
+    <div style="height: 100vh;background-color: rebeccapurple;"></div>
+    <div style="height: 100vh;background-color: rosybrown;"></div>
+    <div style="height: 100vh;background-color: royalblue;"></div>
+    <div style="height: 100vh;background-color: rebeccapurple;"></div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.btn-open-menu').click(function () {
+                $('header').addClass('open');
+            });
+
+            $('.link-menu').click(function () {
+                $('header').removeClass('open');
+            });
+
+            $('.btn-close-menu').click(function () {
+                $('header').removeClass('open');
+            });
+        });
+    </script>
+</body>
+
+</html>

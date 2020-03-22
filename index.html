@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dhananjay_Shinde</title>
+	<meta name="description" content="An exploration of 3D particle animations using three.js and easing" />
+	<meta name="keywords" content="preloader, loader, animation, 3d, particles, three.js, easing, web development" />
+	<meta name="author" content="Jack Rugile for Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap1.min.css">
+	<link rel="stylesheet" href="css/skill.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<script src="js/bubble.js"></script>
+	<script>
+		document.documentElement.className = "js";
+		var supportsCssVars = function () {
+			var e, t = document.createElement("style");
+			return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window
+				.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+		};
+		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+	</script>
+</head>
+
+<body class="demo-5">
+	<svg class="hidden">
+		<symbol id="icon-arrow" viewBox="0 0 24 24">
+			<title>arrow</title>
+			<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 " />
+		</symbol>
+	</svg>
+	<main>
+		<div class="progress-container">
+			<div class="progress-bar" id="myBar"></div>
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+			style="font-family: 'Times New Roman', Times, serif;font-size: 20px;">
+			<a class="navbar-brand" href="#">
+				<img src="favicon.ico" width="30" height="30" alt="">
+			</a>
+			<a class="navbar-brand" href="#">My Portfolio</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+				aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse navi" id="navbarText">
+				<ul class="navbar-nav">
+					<li class="nav-item active na">
+						<a class="nav-link" href="#about">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active na">
+						<a class="nav-link" href="#skills">Skills</a>
+					</li>
+					<li class="nav-item active na">
+						<a class="nav-link" href="#projects">Projects</a>
+					</li>
+					<li class="nav-item active na">
+						<a class="nav-link" href="#certi">Certifications</a>
+					</li>
+					<li class="nav-item active na">
+						<a class="nav-link" href="#designs">Designs</a>
+					</li>
+					<li class="nav-item active na">
+						<a class="nav-link" href="#cont">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="content content--fixed">
+			<div class="debug">
+				<svg class="icon icon--debug" title="Toggle Debug Mode">
+					<use xlink:href="#icon-debug"></use>
+				</svg>
+				<div class="timescale-wrap">
+					<label class="timescale-label">
+						<span class="timescale-title">Timescale:</span>
+						<span class="timescale-value">0.5</span>
+						<input class="timescale-range" type="range" min="0" max="3" step="0.1" value="1">
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="loader"></div>
+		<div id="about" class="content-outer">
+			<div class="content-inner">
+				<h1 class="name" style="font-family: 'Courier New', Courier, monospace;">Dhananjay_Shinde</h1>
+
+				<div class="text" style="font-family: 'Courier New', Courier, monospace;">
+					<h2> <span style="color: red;">start@Exploring</span><span></span><span style="color: blue;">~</span><span>#</span>I'm_<span
+							class="type"></span>
+					</h2>
+				</div>
+				<a href="https://github.com/dhananjay5544" class="fab fa-github fa-2x social"></a>&nbsp;
+				<a href="https://www.linkedin.com/in/dhananjay-shinde-a5a763168"
+					class="fab fa-linkedin-in fa-2x social"></a>&nbsp;
+				<a href="https://www.hackerrank.com/dhananjayshinde1" class="fab fa-hackerrank fa-2x social"></a>&nbsp;
+				<a href="https://twitter.com/Jay37736758" class="fab fa-twitter fa-2x social"></a>&nbsp;
+				<a href="https://www.instagram.com/devine23" class="fab fa-instagram fa-2x social"></a>
+				<a href="#" class="replay-animation" style="display: none;">Replay</a>
+			</div>
+			<div style="width:45%;display: flex;justify-content: flex-end;align-items: center;flex-direction: row-reverse;" data-entrance="from-top">
+				<a class="btn btn-primary" style="border-radius: 17px;font-family: Arial, Helvetica, sans-serif;" href="./Dhananjay_Resume.pdf" download="Dhananjay_Resume" target="_blanck" class="resume-button">Download resume</a>
+				<img src="img/undraw_version_control_9bpv.svg" alt="" style="width: 70%;" class="svg">
+			</div>
+		</div>
+
+		<div id="skills">
+			<h1 class="skill-heading" data-entrance="from-right"><strong>Technical Skills</strong></h1>
+			<div
+				style="display: flex;flex-direction: column;align-items: center;justify-content: center" class="container">
+				<h2 data-entrance="from-right">Programming Languages</h2>
+				<div
+					style="display: flex;flex-direction: row;align-items: center;justify-content: center;margin-bottom: 20px;" class="row" data-entrance="from-right">
+					<button class="button">C</button>
+					<button class="button">C++</button>
+					<button class="button">C#</button>
+					<button class="button">JAVA</button>
+					<button class="button">Python</button>
+					<button class="button">PHP</button>
+				</div>
+				<h2 data-entrance="from-left">Information Security</h2>
+				<div
+					style="display: flex;flex-direction: row;align-items: center;justify-content: center;margin-bottom: 20px;" class="row" data-entrance="from-left">
+					<button class="button drive white">Vulnerability Asessment</button>
+					<button class="button drive white">Penetration Testing</button>
+				</div>
+				<h2 data-entrance="from-right">Technologies</h2>
+				<div
+					style="display: flex;flex-direction: row;align-items: center;justify-content: center;margin-bottom: 20px;" class="row" data-entrance="from-right">
+					<button class="button smoke dark">React JS</button>
+					<button class="button smoke dark">Angular 7</button>
+					<button class="button smoke dark">Node JS</button>
+					<button class="button smoke dark">Google API</button>
+					<button class="button smoke dark">ASP .NET MVC</button>
+
+				</div>
+				<h2 data-entrance="from-left">Web Developement</h2>
+				<div
+					style="display: flex;flex-direction: row;align-items: center;justify-content: center;margin-bottom: 30px;" class="row" data-entrance="from-left">
+					<button class="button smoke white">HTML</button>
+					<button class="button smoke white">CSS3</button>
+					<button class="button smoke white">JavaScript</button>
+					<button class="button smoke white">JQuery</button>
+				</div>
+				<div style="display: flex;flex-direction: row;align-items: center;justify-content: space-evenly" >
+					<i class="fab fab1 anim1 fa-js-square fa-4x" style="color: #ffff06;"></i>
+					<i class="fab fab1 anim1 fa-html5 fa-4x" style="color: orange;"></i>
+					<i class="fab fab1 anim1 fa-react fa-4x" style="color: rgb(2, 238, 255);"></i>
+					
+					<i class="fab fab1 anim2 fa-angular fa-4x" style="color:red"></i>
+					<i class="fab fab1 anim2 fa-css3-alt fa-4x" style="color: blue;"></i>
+					<i class="fab anim2 fa-sass fa-4x" style="color: rgb(14, 1, 3);"></i>
+				</div>
+			</div>
+		</div>
+
+		<div id="projects" class="abc1" style="height: 100vh;">
+			<iframe src="flexcards.html" frameborder="0" scrolling="no" style="overflow: hidden;"></iframe>
+		</div>
+	</main>
+	<section>
+		<div id="certi">
+			<iframe src="imagegallary.html" frameborder="0" style="overflow: hidden;" id="cerframe"></iframe>
+		</div>
+	</section>
+	<section>
+		<div style="max-height: 100vh;" id="designs">
+			<iframe src="itest.html" frameborder="0" scrolling="no" class="if"></iframe>
+		</div>
+	</section>
+	<section>
+		<div id="cont" style="height: 100vh;">
+			<iframe src="ContactFrom/index.html" frameborder="0" scrolling="no" style="overflow: hidden;"></iframe>
+		</div>
+	</section>
+
+	<script src="js/typed.js"></script>
+    <script>
+        var typed = new Typed('.type', {
+            strings: [
+				'Developer',
+				'UI Designer',
+                'Ethical Hacker',
+                'Bug Hunter',
+                'Analyst',
+                'Speaker'
+            ],
+            typeSpeed: 60,
+            backspeed: 60,
+            loop: true
+        });
+	</script>
+	<script src="js/scroll-entrance.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/demo.js"></script>
+	<script src="js/vendor/three.min.js"></script>
+	<script src="js/vendor/OrbitControls.js"></script>
+	<script src="js/vendor/fast-simplex-noise.js"></script>
+	<script src="dist/js/demo-5/index.bundle.js"></script>
+	<script src="js/scroll.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
+</body>
+
+</html>

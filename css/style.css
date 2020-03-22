@@ -1,0 +1,191 @@
+body,html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+[data-entrance] { visibility: hidden; }
+.js [data-entrance] { visibility: hidden; }
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #4caf50;
+    width: 0%;
+}
+
+.skill-heading {
+    font-size: 50px;
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 90px;
+    width: 40%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.skill-heading{
+    animation: big linear infinite 1s alternate;
+}
+@keyframes big{
+    from{transform: scale(1,1)}
+    to{transform: scale(1.1,1.1);}
+}
+#skills{
+  min-height: 100vh;
+  font-family: "Roboto", Arial;
+  background: linear-gradient(to right,#000000 30%,rgb(248, 198, 106) 70%);
+  padding-top: 20px;
+}
+#skills h2{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+iframe {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    overflow: hidden;
+}
+.na:hover{
+    background: linear-gradient(to right, #30CFD0 0%, #a387c5 100%);
+    border-radius: 12px;
+}
+.social {
+    color: white;
+}
+.social:hover {
+    animation: rod1 0.5s linear infinite alternate;
+    text-decoration: none;
+}
+@keyframes rod1{
+    from{transform: scale(1,1);}
+    to{transform: scale(1.5,1.5);}
+}
+#certi {
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+}
+.text{
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+
+
+
+@media (max-width: 575.98px) {
+    #cerframe{
+        height: 200vh;
+    }
+    #certi{
+        height: 110vh;
+    }
+    .if{
+        height: 110vh;
+    }
+    .skills ol li {
+        font-size: 10px;
+        margin-left: 25px;
+    }
+    
+    .skills ol p {
+        font-size: 6px;
+    }
+    .skills{
+        margin-left: 10px;
+        height: 60vh;
+    }
+    #skills h2 {
+        font-size: 20px;
+    }
+    .nav1{
+        margin-left: 0px;
+        font-size: 10px;
+    }
+    .na{
+        width: 55px;
+    }
+    .na1{
+        width: 100px;
+    }
+    .na2{
+        width: 70px;
+    }
+    .skill-heading{
+        padding-top: 0px;
+        font-size: 25px;
+        margin-top: 0px;
+        width: 70%;
+        margin-left: 20px;
+    }
+    .project-head{
+        font-size: 22px;
+        margin-left: 20px;
+        width: 100%;
+
+    }  
+    .content-inner h1{
+        font-size: 15px;
+    }
+    .content-inner a{
+        display: none;
+    }
+    .resume-button{
+        width: 50%;
+        font-size: 10px;
+    }
+    .text h2{
+        font-size: 12px;
+    }
+    .svg{
+        display: none;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #certi{
+        height: 120vh;
+    }
+    .if{
+        height: 120vh;
+    }
+    .skills ol li {
+        font-size: 15px;
+    }
+    
+    .skills ol p {
+        font-size: 10px;
+    }
+    #skills h2 {
+        font-size: 20px;
+    }
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+}
+
+
+@media (min-width: 1500px) {
+ .navi{
+    margin-left: 820px;
+ }
+}
+
+
+
+
